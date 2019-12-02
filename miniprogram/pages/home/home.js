@@ -41,17 +41,7 @@ Page({
           that.setData({
             iconList: res.data
           })
-          // let data ={
-          //   img: res.data[0].img,
-          //   title: "精选优品",
-          //   url: res.data[0].url
-          // }
-          // db.collection('ad_icon').add({
-          //   data:data,
-          //   success:(res)=>{
-          //     console.log(res)
-          //   }
-          // })
+         
         } else {
           wx.showToast({
             title: '获取首页商品出错',
@@ -69,6 +59,21 @@ Page({
         if (res.errMsg == 'collection.get:ok') {
           that.setData({
             goodsList: res.data
+          })
+           let data2 ={
+            img: res.data[0].img,
+            storage: res.data[0].storage,
+            name: "精选优品",
+            price: res.data[0].price
+          }
+          let data =Array(10);
+          data.fill(data2)
+          console.log(data)
+          db.collection('goods').add({
+            data: data,
+            success:(res)=>{
+              console.log(res)
+            }
           })
         } else {
           wx.showToast({
