@@ -1,0 +1,63 @@
+/* components/goodsList/goodsList.wxss */
+
+.c_goods_list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32rpx 24rpx;
+  background-color: #fff;
+}
+
+.c_goods_item{
+  width: 343rpx;
+  padding-bottom: 22rpx;
+  margin-bottom: 16rpx;
+  background-color: #f9f9f9;
+  border-radius: 8rpx;
+  overflow: hidden;
+  position: relative;
+}
+.c_goods_item:nth-of-type(odd){
+    margin-right: 16rpx;
+}
+.c_goods_img_wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 343rpx;
+  height: 343rpx;
+  background-color: #f1f1f1;
+  border-radius: 8rpx 8rpx 0 0;
+
+}
+.c_goods_img{
+  display: block;
+  max-width: 311rpx;
+  max-height: 311rpx;
+}
+
+.c_goods_name{
+  height: 72rpx;
+  font-size: 28rpx;
+  line-height: 1.29;
+  color: #555;
+  padding: 0 16rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 15rpx;
+
+}
+.c_goods_price{
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  color: #ff5146;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 13rpx;
+  display: flex;
+  height: 40rpx;
+  align-items: center;
+}

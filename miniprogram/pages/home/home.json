@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "goodsList":"../../components/goodsList/goodsList",
+    "homeSwiper": "../../components/homeSwiper/homeSwiper",
+    "homeNav": "../../components/homeNav/homeNav"
+  }
+}

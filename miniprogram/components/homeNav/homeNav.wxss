@@ -1,0 +1,40 @@
+/* components/homeNav/homeNav.wxss */
+
+.home_nav{
+  display: flex;
+  width: 100%;
+  background: #fff;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+}
+
+.home_nav_item{
+  flex: 1;
+  height: 143rpx;
+  background: #fff;
+  margin-top: 24rpx;
+  white-space: nowrap;
+  padding: 0 28rpx;
+  float: left;
+}
+.nav_img_wrap{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  margin-bottom: 16rpx;
+}
+.nav_item_img{
+  width: 80rpx; 
+  height: 80rpx;
+}
+.nav_item_des{
+  height: 23rpx;
+  font-family: PingFang-SC;
+  font-size: 24rpx;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  text-align: center;
+  color: #444;
+}
