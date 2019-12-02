@@ -11,6 +11,9 @@ view{
 
 button {
   background: initial;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 0;
 }
 
 button:focus{
@@ -21,7 +24,15 @@ button::after{
   border: none;
 }
 
-
+image{
+  display: block;
+}
+.c_red{
+  color: #ff5146;
+}
+.fwb{
+  font-weight: bold;
+}
 page {
   background: #f6f6f6;
   display: flex;
