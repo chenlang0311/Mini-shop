@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <view class="home_page">
   <homeSwiper list="{{bannerList}}"></homeSwiper>
-  <homeNav list="{{iconList}}"></homeNav>
+  <!-- <homeNav list="{{iconList}}"></homeNav> -->
   <goodsList list="{{goodsList}}"></goodsList>
 </view>

@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+<view class="my_page">
+<button open-type="getUserInfo" bindgetuserinfo="getInfo" >获取用户信息</button>
+
+
+</view>

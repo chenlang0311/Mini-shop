@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/home",
     "pages/index/index",
+    "pages/my/my",
     "pages/detail/detail",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -20,8 +21,26 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "快乐购",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "./images/icon/index.png",
+      "selectedIconPath": "./images/icon/aindex.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "任务",
+      "iconPath": "./images/icon/index.png",
+      "selectedIconPath": "./images/icon/aindex.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "./images/icon/my.png",
+      "selectedIconPath": "./images/icon/amy.png"
+    }]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

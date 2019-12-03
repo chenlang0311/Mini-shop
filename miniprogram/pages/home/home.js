@@ -16,7 +16,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    wx.showLoading({
+      title:"加载中..."
+    })
   },
 
   /**
@@ -32,7 +34,8 @@ Page({
   onShow: function() {
     this.getBanner();
     this.getGoods();
-    this.getAdIcon();
+    wx.hideLoading()
+    // this.getAdIcon();
   },
   getAdIcon() {
     let that = this;
@@ -42,7 +45,6 @@ Page({
           that.setData({
             iconList: res.data
           })
-
         } else {
           wx.showToast({
             title: '获取首页商品出错',
