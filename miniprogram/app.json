@@ -3,6 +3,7 @@
     "pages/home/home",
     "pages/index/index",
     "pages/my/my",
+    "pages/task/task",
     "pages/detail/detail",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -31,10 +32,10 @@
       "iconPath": "./images/icon/index.png",
       "selectedIconPath": "./images/icon/aindex.png"
     },{
-      "pagePath": "pages/home/home",
+      "pagePath": "pages/task/task",
       "text": "任务",
-      "iconPath": "./images/icon/index.png",
-      "selectedIconPath": "./images/icon/aindex.png"
+      "iconPath": "./images/icon/task.png",
+      "selectedIconPath": "./images/icon/atask.png"
     },{
       "pagePath": "pages/my/my",
       "text": "我的",
