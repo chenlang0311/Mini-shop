@@ -1,1 +1,49 @@
 /* pages/task/task.wxss */
+.task_list{
+  background-color: #fff;
+  margin-top: 16rpx;
+}
+.task_item{
+  display: flex;
+  align-items: center;
+  padding: 8rpx 0;
+  position: relative;
+}
+.item_img{
+  height: 108rpx;
+  width: 108rpx;
+  min-width: 108rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  margin-left: 16rpx;
+}
+.item_con{
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  width: 400rpx;
+}
+.item_name{
+  font-weight: bold;
+}
+.jl_des,.item_jl{
+  color: #ff5146;
+  margin-top: 10rpx;
+}
+.item_btns{
+  margin-left: 16rpx;
+}
+.item_btn{
+  font-size: 28rpx;
+  font-weight: bold;
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #fff;
+  background-color: #5db524;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.resolve_btn{
+  background-color: #ddd;
+}
