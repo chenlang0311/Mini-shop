@@ -1,15 +1,15 @@
 <!--pages/task/task.wxml-->
 <view class="task_page">
   <view class="task_list">
-    <view class="task_item one_bd" wx:for="{{taskList}}" wx:key="index">
-      <image class="item_img"> </image>
+    <view class="task_item one_bd" wx:for="{{taskList}}" data-id="{{item._id}}" data-i="{{index}}" wx:key="index" bindtap="{{'do'+item.status}}">
+      <image class="item_img" src="{{item.img}}"> </image>
       <view class="item_con">
-        <text class="item_name">邀请支付宝新用户赚积分</text>
+        <text class="item_name">{{item.name}}</text>
         <!-- <text class="item_jl">2688积分</text> -->
-        <view class="jl_des">奖励2688积分</view>
+        <view class="jl_des">奖励{{item.reward}}积分</view>
       </view>
       <view class="item_btns">
-        <view class="item_btn {{index==2?'resolve_btn':''}}">{{index==2?'已完成':'领取任务'}}</view>
+        <view class="item_btn {{item.status}}_btn">{{btnObj[item.status]}}</view>
       </view>
     </view>
   

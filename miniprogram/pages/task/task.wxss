@@ -44,6 +44,9 @@
   border-radius: 8rpx;
   text-align: center;
 }
-.resolve_btn{
+.received_btn{
   background-color: #ddd;
+}
+.resolve_btn{
+  background-color: #ff5146;
 }
