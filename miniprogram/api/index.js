@@ -1,5 +1,6 @@
-const db = wx.cloud.database()
 import { swiper } from './swiper';
+import { user } from './user';
 module.exports =  {
-  swiper
+  swiper,
+  user
 }
