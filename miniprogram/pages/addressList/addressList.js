@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    addressList: [{ "address_id": "22627", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "烟台市", "area_id": "2555", "area_name": "栖霞市" }, { "address_id": "22627", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "烟台市", "area_id": "2555", "area_name": "栖霞市" }],
+    index: null,
+    loadInfo: true
   },
 
   /**

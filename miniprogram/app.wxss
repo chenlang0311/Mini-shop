@@ -201,7 +201,31 @@
   content: "\e60d";
 }
 
+.sel_dot{
+  width: 36rpx;
+  height: 36rpx;
+  position: relative;
+  margin-right: 32rpx;
+}
 
+.sel_dot::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 1px solid #ccc; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  pointer-events: none; 
+  border-radius: 50%; 
+}
 
 
 view{

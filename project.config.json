@@ -72,6 +72,13 @@
 					"id": -1,
 					"name": "pages/address/address",
 					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addressList/addressList",
+					"pathName": "pages/addressList/addressList",
 					"scene": null
 				}
 			]

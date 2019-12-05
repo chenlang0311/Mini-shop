@@ -1,2 +1,40 @@
 <!--pages/addressList/addressList.wxml-->
-<text>pages/addressList/addressList.wxml</text>
+<block wx:if="{{loadInfo === true}}">
+<view class='container clearfix'>
+  <view class='ad_list'>
+    <view  data-url='/pages/address/address?editAdd={{item.address_id}}' class='ad_item uc_item' wx:for="{{addressList}}" wx:key="index">
+      <view class='info_panel' bindtap='selAddres' data-index='{{index}}'>
+          <view class='item_left'>
+            <view class='userInfo'>
+                <view class='r_name'>{{item.receiver_name}}</view>
+                <view class='r_phone'>{{item.receiver_phone}}</view>
+            </view>
+            <view class='address'>{{item.province_name}}{{item.city_name}}{{item.area_name}}{{item.receiver_address}}
+            </view>
+          </view>
+          <view class='item_right'>
+            <view class='sel_area' bindtap='setDe' data-in="{{index}}" data-id="{{item.address_id}}">
+                <view class="sel_dot {{item.default_address == 1 ? 'asel': ''}}"></view>
+            </view>
+          </view>
+      </view>
+      <view class='edit'>
+        <navigator class='edit_btn' hover-class='none' url='/pages/address/address?editAdd={{item.address_id}}'>编辑</navigator>
+        <view class='edit_btn' catchtap='delAddress' data-id="{{item.address_id}}">删除</view>
+      </view>
+    </view>
+    <block wx:if="{{addressList.length <= 0}}">
+        <view class='null_text'>
+            当前没有地址数据
+        </view>
+    </block>    
+  </view>
+  <view class='add_address color_green--bg f34' bindtap='addAddress'><view class='cross'>+</view>新增收货地址</view>
+</view>
+</block>
+
+<block wx:if="{{loadInfo === false}}">
+    <loading>
+        数据请求中
+    </loading>
+</block>
