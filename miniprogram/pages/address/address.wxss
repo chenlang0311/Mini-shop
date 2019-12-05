@@ -1,0 +1,87 @@
+/* miniprogram/pages/address/address.wxss */
+.container{
+  height: 100%;
+}
+
+arrow_right.container{
+  height: 100%;
+}
+
+form{
+  font-size: 34rpx;
+  color: #333;
+}
+
+.form_box{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 32rpx;
+  background: #fff;
+}
+
+.user_item{
+  position: relative;
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 32rpx;
+  box-sizing: border-box;
+}
+
+.user_item:last-child::before{
+  border-width: 0;
+}
+
+.pos{
+  text-align: right;
+}
+
+.user_item input{
+  text-align: right;
+  width: 470rpx;
+  font-size:28rpx;
+}
+
+.arrow_right{
+  display:inline-block;
+  position:absolute;
+  top:40rpx;
+  right:24rpx;
+  margin-left:17rpx;
+  font-size:22rpx;
+}
+
+.user_item:first-child{
+  margin-top: 24rpx;
+  border-top: 0rpx;
+}
+
+.container .submit_btn{
+  width: 686rpx;
+  height: 88rpx;
+  margin-top: 64rpx;
+}
+
+.submit_btn::after{
+  display: none;
+}
+
+.logo{
+  width: 376rpx;
+  height: 44rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 48rpx;
+}
+
+.ad{
+  width: 452rpx;
+  padding-right:24rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  text-align: right;
+}

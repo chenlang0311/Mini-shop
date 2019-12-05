@@ -1,11 +1,11 @@
 const db = wx.cloud.database()
 const swiperDb = db.collection('swiper')
-let  swiper  = {
-    getBanner(opt) {
+let swiper = {
+  getBanner(opt) {
     opt = opt || {}
     return new Promise((resolve, reject) => {
       swiperDb.where(opt).get({
-        success: function (res) {
+        success: function(res) {
           if (res.errMsg == 'collection.get:ok') {
             resolve(res.data);
           } else {
@@ -19,6 +19,6 @@ let  swiper  = {
     })
   }
 }
-module.exports =  {
+module.exports = {
   swiper
 }

@@ -5,6 +5,8 @@
     "pages/my/my",
     "pages/task/task",
     "pages/detail/detail",
+    "pages/address/address",
+    "pages/addressList/addressList",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -26,22 +28,26 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "./images/icon/index.png",
-      "selectedIconPath": "./images/icon/aindex.png"
-    },{
-      "pagePath": "pages/task/task",
-      "text": "任务",
-      "iconPath": "./images/icon/task.png",
-      "selectedIconPath": "./images/icon/atask.png"
-    },{
-      "pagePath": "pages/my/my",
-      "text": "我的",
-      "iconPath": "./images/icon/my.png",
-      "selectedIconPath": "./images/icon/amy.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/icon/index.png",
+        "selectedIconPath": "./images/icon/aindex.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务",
+        "iconPath": "./images/icon/task.png",
+        "selectedIconPath": "./images/icon/atask.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/icon/my.png",
+        "selectedIconPath": "./images/icon/amy.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

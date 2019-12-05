@@ -65,6 +65,13 @@
 					"id": -1,
 					"name": "pages/task/task",
 					"pathName": "pages/task/task",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/address",
+					"pathName": "pages/address/address",
 					"scene": null
 				}
 			]
