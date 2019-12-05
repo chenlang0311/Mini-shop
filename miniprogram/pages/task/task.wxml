@@ -1,5 +1,6 @@
 <!--pages/task/task.wxml-->
 <view class="task_page">
+  <view class="task_title one_bd">任务列表</view>
   <view class="task_list">
     <view class="task_item one_bd" wx:for="{{taskList}}" data-id="{{item._id}}" data-i="{{index}}" wx:key="index" bindtap="{{'do'+item.status}}">
       <image class="item_img" src="{{item.img}}"> </image>
@@ -9,7 +10,9 @@
         <view class="jl_des">奖励{{item.reward}}积分</view>
       </view>
       <view class="item_btns">
+        <view class="lv_limit" wx:if="{{item.lv>0}}">限制:lv<text class="c_red fwb">{{item.lv}}</text></view>
         <view class="item_btn {{item.status}}_btn">{{btnObj[item.status]}}</view>
+        <view class="exp_wrap">+<text class="c_red fwb">{{item.exp}}</text><image src="/images/task/exp.png" class="exp_img"></image></view>
       </view>
     </view>
   

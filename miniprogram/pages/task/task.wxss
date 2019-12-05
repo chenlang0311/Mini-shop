@@ -1,12 +1,20 @@
 /* pages/task/task.wxss */
+.task_title{
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+  color: #333;
+  padding-left: 24rpx;
+  background-color: #fff;
+  position: relative;
+}
 .task_list{
   background-color: #fff;
-  margin-top: 16rpx;
 }
 .task_item{
   display: flex;
   align-items: center;
-  padding: 8rpx 0;
+  padding: 16rpx 0;
   position: relative;
 }
 .item_img{
@@ -49,4 +57,19 @@
 }
 .resolve_btn{
   background-color: #ff5146;
+}
+.exp_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.exp_img{
+  height: 64rpx;
+  width: 64rpx;
+}
+.lv_limit{
+  font-size: 24rpx;
+  text-align: center;
+  margin-bottom: 8rpx;
 }
