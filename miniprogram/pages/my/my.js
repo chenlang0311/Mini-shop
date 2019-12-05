@@ -73,6 +73,9 @@ Page({
   onUserInfoClick: function () {
     let that = this;
     if (wx.getStorageSync('openid')) {
+      if (wx.getStorageSync('userInfo')){
+        return ;
+      }
       that.getUser(wx.getStorageSync('openid'))
     } else {
       this.showLoginDialog();

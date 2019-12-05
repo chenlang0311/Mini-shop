@@ -196,3 +196,13 @@ page{
 .dialog-login .dialog-body button{
   margin-top: 30rpx;
 }
+.lv_pro{
+  margin-top: 8rpx;
+}
+.lv_wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rpx;
+  color: #FFF;
+  font-size: 26rpx;
+}

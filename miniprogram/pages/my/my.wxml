@@ -8,6 +8,14 @@
     <view class="info">
       <text class='name' bindtap='onUserInfoClick'>{{ userInfo.nickName || '点击登录' }}</text>
       <!-- <text class='level' bindtap='onUserInfoClick'></text> -->
+      <block >
+        <progress percent="20" color="#ff5148" class="lv_pro"></progress>
+        <view class="lv_wrap">
+          <view>LV1</view>
+          <view>100/500</view>
+          <view>LV2</view>
+        </view>
+      </block>
     </view>
     <image bindtap="onUserInfoClick" class='btn' src='/images/address_right.png'></image>
   </view>
