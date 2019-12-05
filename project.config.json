@@ -79,6 +79,13 @@
 					"id": -1,
 					"name": "pages/addressList/addressList",
 					"pathName": "pages/addressList/addressList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/feedback/feedback",
+					"pathName": "pages/feedback/feedback",
 					"scene": null
 				}
 			]

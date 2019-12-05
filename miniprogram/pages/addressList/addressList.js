@@ -64,5 +64,20 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  delAddress() {
+    wx.showModal({
+      title: '提示',
+      content: '确认删除该地址?',
+      confirmText: "删除",
+      success: (res) => {
+        if (res.confirm) {
+          console.log("删除")
+        }
+        if (res.cancel) {
+          console.log("取消")
+        }
+      }
+    })
+  },
 })

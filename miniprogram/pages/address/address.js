@@ -1,5 +1,5 @@
 // miniprogram/pages/address/address.js
-const phoneTest = /^1\d{10}$/;
+
 Page({
 
   /**
@@ -56,7 +56,7 @@ Page({
   save(e){
     let that = this;
     let data = e.detail.value
-    if (!phoneTest.test(data.phone)) {
+    if (!wx.$phoneTest.test(data.phone)) {
       wx.showToast({
         icon: 'none',
         title: '手机号码错误',
