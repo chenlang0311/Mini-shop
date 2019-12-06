@@ -20,7 +20,7 @@
 
   <view class="user-menu">
     <view class="item item-bottom">
-      <navigator url="/pages/ucenter/order/order" class="a">
+      <navigator url="/pages/order/order" class="a">
         <text class="icon order"></text>
         <text class="txt">我的订单</text>
       </navigator>
