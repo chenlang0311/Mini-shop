@@ -1,7 +1,7 @@
 <!--components/homeSwiper/homeSwiper.wxml-->
 <swiper indicator-dots circular previous-margin="48rpx" class="home_swiper" next-margin="48rpx" autoplay indicator-active-color="#5db524">
     <swiper-item wx:for="{{list}}" wx:key="index">
-      <view class="my_swiper_item" data-url="{{item.url}}" bindtap="go">
+      <view class="my_swiper_item" data-type="{{item.type}}" data-url="{{item.url}}" bindtap="go">
         <image src="{{item.img}}" class="banner_img"></image>
       </view>
     </swiper-item>

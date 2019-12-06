@@ -32,7 +32,7 @@ Page({
   },
   getDetail(id){
     let that = this;
-    console.log('getDetail',id)
+    console.log('getDetail',id, id == '9c332fee-5943-488b-adc3-840e20146f67')
     db.collection('goods').where({
       _id:id
     }).get({
