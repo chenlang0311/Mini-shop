@@ -9,6 +9,7 @@
     "pages/addressList/addressList",
     "pages/feedback/feedback",
     "pages/order/order",
+    "pages/orderDetail/orderDetail",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

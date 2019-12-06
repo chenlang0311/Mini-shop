@@ -5,7 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    orderList: [{
+      id:9999,
+      order_sn:"20191206123456789",
+      order_status_text:"待付款",
+      goodsList:[
+        {
+          id:1111,
+          list_pic_url:"/images/task/invite.png",
+          goods_name:"商品名字",
+          number:"3"
+        }
+      ],
+      actual_price:100,
+      handleOption:{
+        pay:true
+      }
+    }, {
+        id: 9999,
+        order_sn: "20191206123456789",
+        order_status_text: "已完成",
+        goodsList: [
+          {
+            id: 1111,
+            list_pic_url: "/images/task/invite.png",
+            goods_name: "商品名字",
+            number: "3"
+          }, {
+            id: 1111,
+            list_pic_url: "/images/task/invite.png",
+            goods_name: "商品名字",
+            number: "3"
+          }
+        ],
+        actual_price: 100,
+        handleOption: {
+          pay: false
+        }
+      }]
   },
 
   /**
