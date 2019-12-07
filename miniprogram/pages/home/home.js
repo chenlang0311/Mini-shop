@@ -56,32 +56,10 @@ Page({
   },
   getGoods() {
     let that = this;
-    db.collection('goods').get({
-      success: function(res) {
-        console.log(res)
-        if (res.errMsg == 'collection.get:ok') {
-          that.setData({
-            goodsList: res.data
-          })
-          //  let data2 ={
-          //   img: res.data[0].img,
-          //   storage: res.data[0].storage,
-          //   name: "精选优品",
-          //   price: res.data[0].price
-          // }
-          // db.collection('goods').add({
-          //   data: data2,
-          //   success:(res)=>{
-          //     console.log(res)
-          //   }
-          // })
-        } else {
-          wx.showToast({
-            title: '获取首页商品出错',
-            icon: "none"
-          })
-        }
-      }
+    api.goods.getGoods().then(res=>{
+      that.setData({
+        goodsList: res
+      })
     })
   },
   getBanner() {
