@@ -12,8 +12,8 @@
     -webkit-box-orient: vertical;
     font-size: 34rpx;
     color: #333;
-    padding: 0 24rpx;
-    margin-top: 16rpx;
+    padding: 16rpx 24rpx;
+    background-color: #fff;
 }
 .detail_price{
   font-size: 30rpx;
