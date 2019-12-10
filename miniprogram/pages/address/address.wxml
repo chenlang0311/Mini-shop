@@ -29,6 +29,6 @@
       </view>
     </view>
     <!-- bindtap="save" -->
-    <button class="color_green--bg f34 submit_btn"   formType="submit">保存</button>
+    <button class="color_green--bg f34 submit_btn"   formType="submit">{{btnText}}</button>
   </form>
 </view>

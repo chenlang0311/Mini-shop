@@ -7,14 +7,32 @@ Page({
    */
   data: {
     region: ['广东省', '广州市', '海珠区'],
-    customItem: '全部'
+    customItem: '全部',
+    receiver_phone:"",
+    receiver_name:"",
+    receiver_address:"",
+    isEdit:false,
+    btnText:"保存"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(options&&options.editId){
+      let addressItem = wx.getStorageSync("addressItem")
+      let region=[];
+      region[0] = addressItem["province_name"]
+      region[1] = addressItem["city_name"]
+      region[2] = addressItem["area_name"]
+      this.setData({
+        isEdit:true,
+        region: region,
+        receiver_phone: addressItem["receiver_phone"],
+        receiver_name: addressItem["receiver_name"],
+        receiver_address: addressItem["receiver_address"],
+      })
+    }
   },
 
   /**

@@ -19,8 +19,8 @@
           </view>
       </view>
       <view class='edit'>
-        <navigator class='edit_btn' hover-class='none' url='/pages/address/address?editAdd={{item.address_id}}'>编辑</navigator>
-        <view class='edit_btn' catchtap='delAddress' data-id="{{item.address_id}}">删除</view>
+        <view class='edit_btn' hover-class='none' bindtap="editAddress" data-idx="{{index}}" data-id='{{item.address_id}}'>编辑</view>
+        <view class='edit_btn' catchtap='delAddress'  data-idx="{{index}}"  data-id="{{item.address_id}}">删除</view>
       </view>
     </view>
     <block wx:if="{{addressList.length <= 0}}">

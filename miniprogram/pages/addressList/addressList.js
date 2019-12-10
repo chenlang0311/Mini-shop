@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    addressList: [{ "address_id": "22627", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "烟台市", "area_id": "2555", "area_name": "栖霞市" }, { "address_id": "22627", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "烟台市", "area_id": "2555", "area_name": "栖霞市" }],
+    addressList:[] ,
     index: null,
     loadInfo: true
   },
@@ -14,7 +14,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let addressList = wx.getStorageSync("addressList");
+    if (!addressList){
+      addressList = [{ "address_id": "22628", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "烟台市", "area_id": "2555", "area_name": "栖霞市" }, { "address_id": "22627", "receiver_phone": "18453571332", "receiver_name": "李翠凤", "receiver_address": "松山", "default_address": "0", "province_id": "15", "province_name": "山东省", "city_id": "228", "city_name": "泰安市", "area_id": "2555", "area_name": "泰山风景区" }];
+      wx.setStorageSync("addressList", addressList)
+      this.setData({
+        addressList: addressList
+      })
+    }else{
+      this.setData({
+        addressList: addressList
+      })
+    }
   },
 
   /**
@@ -65,7 +76,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  delAddress() {
+  delAddress(e) {
+    let { id, idx } = e.currentTarget.dataset;
+    let that = this;
     wx.showModal({
       title: '提示',
       content: '确认删除该地址?',
@@ -73,11 +86,29 @@ Page({
       success: (res) => {
         if (res.confirm) {
           console.log("删除")
+          that.data.addressList.splice(idx, 1)
+          that.setData({
+            addressList: that.data.addressList
+          })
         }
         if (res.cancel) {
           console.log("取消")
         }
       }
+    })
+  },
+  editAddress(e){
+    let {id,idx} =e.currentTarget.dataset
+    let item = this.data.addressList[idx];
+    wx.setStorageSync("addressItem", item)
+    wx.$navigateTo({
+      url: `/pages/address/address?editId=${id}`,
+    })
+
+  },
+  addAddress(){
+    wx.$navigateTo({
+      url: '/pages/address/address',
     })
   },
 })
