@@ -10,6 +10,7 @@
     "pages/feedback/feedback",
     "pages/order/order",
     "pages/orderDetail/orderDetail",
+    "pages/checkout/checkout",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

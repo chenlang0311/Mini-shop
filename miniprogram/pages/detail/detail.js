@@ -52,9 +52,12 @@ Page({
     })
   },
   toExchange(){
-    wx.showToast({
-      title: '点击兑换按钮',
-      icon:"none"
+    // wx.showToast({
+    //   title: '点击兑换按钮',
+    //   icon:"none"
+    // })
+    wx.$navigateTo({
+      url: '/pages/checkout/checkout',
     })
   },
   /**
