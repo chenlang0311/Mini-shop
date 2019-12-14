@@ -6,8 +6,8 @@
 <view class="detail_price">价格 <text class="c_red fwb">{{detail.price}}</text> </view>
 
 <view class="detail_btn">
-<button class="btn_item btn_left" open-type="share">分享给好友</button>
-<button class="btn_item btn_right" bindtap="toExchange">立即兑换</button>
+<button class="btn_left" open-type="share"></button>
+<view class="btn_item btn_right" bindtap="toExchange">立即兑换</view>
 
 </view>
 

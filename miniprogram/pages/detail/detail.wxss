@@ -28,23 +28,28 @@
   height: 88rpx;
   display: flex;
   align-items: center;
-  background: linear-gradient(270deg,#f84035,#ff5146);
+  background-color:#fff;
 }
 .btn_item{
-  width: 50%;
   font-size: 40rpx;
   height: 88rpx;
+  border-radius: 44rpx;
   line-height: 88rpx;
+  text-align: center;
   font-weight: bold;
   color: #fff;
   padding: 0;
-  border-radius: 0;
+  width: 520rpx;
 }
 .btn_item::after{
   border-radius: none;
 }
-.btn_left{
-  /* background: linear-gradient(270deg,#f84035,#ff5146); */
+.detail_btn .btn_left{
+  background:url(http://blog.77dress.cn/img/share.png) no-repeat;
+  background-size: 80rpx 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+
 }
 .btn_right{
   background: linear-gradient(270deg,#ff8533,#ffc446);
