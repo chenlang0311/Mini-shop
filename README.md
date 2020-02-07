@@ -12,7 +12,7 @@ git clone https://github.com/chenlang0311/Mini-shop
 2. 中间你需要将APPID换成你自己的APPID（你的APPID那个需要开通云开发）
 3. 在cloudfunctions目录下的子目录每个都需要npm install 安装依赖
 4. 右键点击cloudfunctions目录，选择一个环境部署(如果有问题你可以重启一下微信开发者工具)
-
+5. 基本的数据在json文件夹下，数据格式可以参考，也可以直接导入测试
 
 ### 功能列表
 + 首页
