@@ -7,6 +7,12 @@ A miniprogram shop
 ```
 git clone https://github.com/chenlang0311/Mini-shop
 ```
+### 安装说明
+1. 用微信开发者工具打开，选择导入项目
+2. 中间你需要将APPID换成你自己的APPID（你的APPID那个需要开通云开发）
+3. 在cloudfunctions目录下的子目录每个都需要npm install 安装依赖
+4. 右键点击cloudfunctions目录，选择一个环境部署(如果有问题你可以重启一下微信开发者工具)
+
 
 ### 功能列表
 + 首页
