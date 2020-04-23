@@ -1,4 +1,5 @@
 // pages/checkout/checkout.js
+const api = require("../../api/index.js")
 Page({
 
   /**
@@ -101,6 +102,11 @@ Page({
     wx.showToast({
       title: '点击去付款',
       icon:"none"
+    })
+    api.pay.cloudPay().then(res=>{
+      console.log('xxxxxxxxxxxx',res)
+    }).catch(err=>{
+      console.log("Err",err)
     })
     return false;
     if (this.data.addressId <= 0) {
